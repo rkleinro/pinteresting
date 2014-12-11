@@ -1,3 +1,5 @@
+<%= render 'pages/home' unless user_signed_in? %>
+
 <div id="pins">
     <% @pins.each do |pin| %>
       <div class="box">
@@ -13,7 +15,6 @@
         <% end %>
       </div>
     </div>
-      <% end %>
     </div>
 
 
